@@ -1,0 +1,30 @@
+spring:
+  redist:
+    database: 0
+    host: localhost
+    port: 6379
+    password:
+    pool:
+      max-active: 200
+      max-wait: -1
+      max-idle: 10
+      min-idle: 0
+    timeout: 1000
+remote:
+  auth:
+    #url: https://test-qhzx.pingan.com.cn:5443/do/dmz/query/loanee/v1/MSC8037
+    url: https://test-qhzx.pingan.com.cn:5443/do/dmz/verify/comAuthOnLine/v4/JIY7001
+    orgCode: 10000000
+    chnlId: qhcs-dcs
+    authCode: CRT001A2
+    desKey: SK803@!QLF-D25WEDA5E52DA
+    userName: V_PA025_QHCS_DCS
+    userPassword: weblogic1
+    period: 60000
+    cer: credoo_stg.cer
+    jks: credoo_stg.jks
+    storePassword: qhzx_stg
+    storeAlias: signKey
+    appName: gamma-sign
+    authDataFilePath: LicenseFile_dev
+    zone: dmz
