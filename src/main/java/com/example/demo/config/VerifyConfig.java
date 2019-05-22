@@ -1,6 +1,6 @@
 package com.example.demo.config;
 
-import com.paic.verify.filter.AuthFilter;
+
 import com.paic.verify.service.ComponentAuthService;
 import com.paic.verify.service.MessageGenerator;
 import com.paic.verify.service.NoticeIntercepter;
@@ -75,16 +75,6 @@ public class VerifyConfig {
     @Bean(initMethod = "init")
     public ComponentAuthService componentAuthService(NoticeIntercepter intercepter,MessageGenerator generator) {
         return new ComponentAuthService(intercepter,generator);
-    }
-    @Bean
-    public FilterRegistrationBean filterRegistration() {
-
-        FilterRegistrationBean registration = new FilterRegistrationBean();
-        registration.setFilter(new AuthFilter());
-        registration.addUrlPatterns("/*");
-        registration.setName("authFilter");
-        registration.setOrder(1);
-        return registration;
     }
 
 }

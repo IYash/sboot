@@ -14,6 +14,7 @@ remote:
   auth:
     #url: https://test-qhzx.pingan.com.cn:5443/do/dmz/query/loanee/v1/MSC8037
     url: https://test-qhzx.pingan.com.cn:5443/do/dmz/verify/comAuthOnLine/v4/JIY7001
+#    url: http://10.20.14.96:35020/do/sf/verify/comAuthOnLine/v4/JIY7001
     orgCode: 10000000
     chnlId: qhcs-dcs
     authCode: CRT001A2
